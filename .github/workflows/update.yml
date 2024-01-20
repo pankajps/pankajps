@@ -1,0 +1,183 @@
+name: Metrics
+on:
+  # Schedule daily updates
+  schedule: [{cron: "34 2 * * *"}]
+  # (optional) Run workflow manually
+  workflow_dispatch:
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: ["master", "main"]}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # checkout the repository to the GitHub Actions runner
+      - name: Checkout
+        uses: actions/checkout@v2
+      # install dependencies
+      - name: Add packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          sudo apt-get install -y python3-setuptools
+          sudo apt-get install -y python3-wheel
+          sudo apt-get install -y python3-dev
+          pip3 install --upgrade pip
+      # debug README.md
+      - name: Debug README.md
+        run: |
+          pwd
+          ls -la
+    
+      # shell script to assemble the README.md
+      - name: Assemble README.md
+        run: |
+          cat README.md.header > README.md
+          cat blog-posts.md >> README.md
+          cat README.md.footer >> README.md
+                echo "
+          [//]: # (`date`)
+
+          " >> README.md
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-metrics.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: pankajps
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Dubai
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          plugin_activity: yes
+          plugin_stars: no
+          plugin_stars_limit: 25
+          plugin_topics: no
+          plugin_sponsors: no
+          plugin_achievements: no
+          
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-achievements.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: pankajps
+          template: classic
+          base:
+          config_timezone: Asia/Dubai
+          plugin_achievements: yes
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-stars.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: pankajps
+          template: classic
+          base:
+          config_timezone: Asia/Dubai
+          plugin_isocalendar: no
+          plugin_languages: no
+          plugin_activity: no
+          plugin_stars: yes
+          plugin_stars_limit: 10
+          plugin_topics: no
+          plugin_sponsors: no
+          plugin_achievements: no
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-stars-more.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: pankajps
+          template: classic
+          base:
+          config_timezone: Asia/Dubai
+          plugin_isocalendar: no
+          plugin_languages: no
+          plugin_activity: no
+          plugin_stars: yes
+          plugin_stars_limit: 100
+          plugin_topics: no
+          plugin_sponsors: no
+          plugin_achievements: no
+          
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-sponsors.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: pankajps
+          template: classic
+          base:
+          config_timezone: Asia/Dubai
+          plugin_isocalendar: no
+          plugin_languages: no
+          plugin_activity: no
+          plugin_stars: no
+          plugin_stars_limit: 25
+          plugin_topics: no
+          plugin_sponsors: yes
+          plugin_achievements: no
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-topics.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: pankajps
+          template: classic
+          base:
+          config_timezone: Asia/Dubai
+          plugin_isocalendar: no
+          plugin_languages: no
+          plugin_activity: no
+          plugin_stars: no
+          plugin_stars_limit: 25
+          plugin_topics: yes
+          plugin_sponsors: no
+          plugin_achievements: no
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-activity.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: pankajps
+          template: classic
+          base:
+          config_timezone: Asia/Dubai
+          plugin_isocalendar: no
+          plugin_languages: no
+          plugin_activity: yes
+          plugin_stars: no
+          plugin_stars_limit: 25
+          plugin_topics: no
+          plugin_sponsors: no
+          plugin_achievements: no
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: github-activity.svg
+          token: ${{ secrets.GH_TOKEN }}
+          user: pankajps
+          template: classic
+          base:
+          config_timezone: Asia/Dubai
+          plugin_isocalendar: no
+          plugin_languages: no
+          plugin_activity: yes
+          plugin_stars: no
+          plugin_stars_limit: 25
+          plugin_topics: no
+          plugin_sponsors: no
+          plugin_achievements: no
+
+      # commit the changes
+      - name: Commit files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git commit -m "Update README.md"
+          git fetch
+          git rebase origin/main
+          git push
+          
