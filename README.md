@@ -2,7 +2,7 @@
 I am System engineer at Core42<a href="#footnote"><super>*1</super></a>, a subsidary of G42.
 
 Status:
-- 🌱 I’m currently focusing my learning on OpenStack, Kubernetes, and Openshift.
+- 🌱 I’m currently focusing my learning on Openstack, and Openshift.
 - 💬 Happy to chat about geeky stuff.
 - 📫 How to reach me: email pankaj.g42abd @ gmail.com
 - 😄 Pronouns: He/Him
@@ -19,6 +19,6 @@ Status:
 
 
 
-[//]: # (Mon May  6 02:42:05 UTC 2024)
+[//]: # (Sat May 11 09:05:25 UTC 2024)
 
 
