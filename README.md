@@ -1,11 +1,30 @@
+👋 Hi there! Welcome to my GitHub!
 
-I am System engineer at Core42<a href="#footnote"><super>*1</super></a>, a subsidary of G42.
+💻 About Me:
+I’m an AWS SysOps Certified IT Professional and RHCA with a strong foundation in System Engineering and DevOps. I specialize in:
 
-Status:
-- 🌱 I’m currently focusing my learning on Openstack, and Openshift.
-- 💬 Happy to chat about geeky stuff.
-- 📫 How to reach me: email pankaj.g42abd @ gmail.com
-- 😄 Pronouns: He/Him
+🌐 Cloud Architecture
+⚙️ Automation & Optimization
+📦 Storage Management
+🛠️ Troubleshooting & Fault-Tolerant Infrastructure Design
+🚀 My expertise extends to OpenShift, OpenStack, Kubernetes, Prometheus, Grafana, and Jenkins—building and managing scalable, reliable, and high-performing systems.
+
+🔧 I thrive on exploring new and innovative ways to solve complex problems, focusing on simplifying workflows and enhancing efficiency.
+
+🧘 Life Outside Work:
+I believe in a balanced lifestyle. My daily routine includes:
+
+📚 Continuous Learning
+🏋️‍♂️ Exercise & Yoga
+🧘 Meditation
+👨‍👩‍👦 Quality Family Time
+🎯 Current Interests:
+
+Advancing in DevOps practices.
+Exploring cutting-edge tools for automation and monitoring.
+Contributing to the open-source community.
+📫 Let’s Connect:
+Feel free to reach out for collaborations, discussions on cloud optimization, or exploring new technologies!
 
 <hr />
 <a id="footnote"></a>
