@@ -1,8 +1,8 @@
 
-I am System engineer at Tesnus.
+I am System engineer at Core42<a href="#footnote"><super>*1</super></a>, a subsidary of G42.
 
 Status:
-- 🌱 I’m currently focusing my learning on Openstack, and Openshift. Improving Python and go.
+- 🌱 I’m currently focusing my learning on Openstack, and Openshift.
 - 💬 Happy to chat about geeky stuff.
 - 📫 How to reach me: email pankaj.g42abd @ gmail.com
 - 😄 Pronouns: He/Him
@@ -19,6 +19,6 @@ Status:
 
 
 
-[//]: # (Mon Apr 21 03:27:42 UTC 2025)
+[//]: # (Fri Apr 25 19:13:01 UTC 2025)
 
 
