@@ -1,14 +1,11 @@
 
-I am System engineer at tesnus<a href="#footnote"><super>*1</super></a>, a subsidary of G42.
+I am System engineer at Core42<a href="#footnote"><super>*1</super></a>, a subsidary of G42.
 
 Status:
-- 🌱 I’m currently focusing my learning on OpenShift and improving my Python expertise.
+- 🌱 I’m currently focusing my learning on Openstack, and Openshift.
 - 💬 Happy to chat about geeky stuff.
 - 📫 How to reach me: email pankaj.g42abd @ gmail.com
 - 😄 Pronouns: He/Him
-
-- My credly profile - https://www.credly.com/users/pankaj-pratap-singh
-- My Redhat certificate information - https://rhtapps.redhat.com/verify?certId=110-189-982 
 
 <hr />
 <a id="footnote"></a>
@@ -22,6 +19,6 @@ Status:
 
 
 
-[//]: # (Mon May 26 03:33:04 UTC 2025)
+[//]: # (Thu May 29 03:24:06 UTC 2025)
 
 
