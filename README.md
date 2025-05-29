@@ -1,5 +1,5 @@
 
-I am System engineer at Core42<a href="#footnote"><super>*1</super></a>.
+I am System engineer at Core42<a href="#footnote"><super>*1</super></a>, a subsidary of G42.
 
 Status:
 - 🌱 I’m currently focusing my learning on Openstack, and Openshift.
@@ -19,6 +19,6 @@ Status:
 
 
 
-[//]: # (Thu May 29 03:24:06 UTC 2025)
+[//]: # (Thu May 29 04:51:47 UTC 2025)
 
 
