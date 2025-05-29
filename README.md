@@ -7,8 +7,8 @@ Status:
 - 📫 How to reach me: email pankaj.g42abd @ gmail.com
 - 😄 Pronouns: He/Him
 
-My credly profile - https://www.credly.com/users/pankaj-pratap-singh
-My Redhat certificate information - https://rhtapps.redhat.com/verify?certId=110-189-982 
+- My credly profile - https://www.credly.com/users/pankaj-pratap-singh
+- My Redhat certificate information - https://rhtapps.redhat.com/verify?certId=110-189-982 
 
 <hr />
 <a id="footnote"></a>
