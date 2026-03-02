@@ -23,9 +23,9 @@
                                     </svg>
                                     <div class="content">
                                         Forked
-                                        <span class="repo">debianmaster/openshift-examples</span>
+                                        <span class="repo">bigdotsoftware/RabbitMQ-In-Practice</span>
                                         to
-                                        <span class="repo">pankajps/openshift-examples</span>
+                                        <span class="repo">pankajps/RabbitMQ-In-Practice</span>
                                     </div>
                                 </div>
                             </section>
