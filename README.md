@@ -1,5 +1,5 @@
 
-I am System engineer at Tesnus<a href="#footnote"><super>*1</super></a>.
+I am System engineer at Core42<a href="#footnote"><super>*1</super></a>, a subsidary of G42.
 
 Status:
 - 🌱 I’m currently focusing my learning on Openstack, and Openshift.
@@ -19,6 +19,6 @@ Status:
 
 
 
-[//]: # (Mon Apr 27 05:38:18 UTC 2026)
+[//]: # (Fri May  1 11:55:36 UTC 2026)
 
 
